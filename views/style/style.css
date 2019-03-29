@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-transform: uppercase;
+    color: #4285F4;
+}
+
+.google-login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(226, 155, 149);
+    max-height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer
+}
+
+.google-login:hover{
+    background-color: #DB4437;
+}
+
+.logo {
+    max-height: 40px;
+
+}
