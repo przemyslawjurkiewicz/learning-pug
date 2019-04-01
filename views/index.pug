@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title="Login with google"
+        style
+            include ./style/style.css
+    body        
+        div.container
+            div.border
+                h1 Login to your account:
+                form(action="http://localhost:3000/userform" method="GET")
+                    input(type="text" name="first_name" placeholder="Name")
+                    input(type="text" name="last_name" placeholder="Last name")
+                    input.submit(type="submit" value="Submit")
+                div.break
+                    hr.line
+                    div OR
+                    hr.line
+                a.google-login(href="/auth/google")
+                    img.logo(src="/images/google.png") 
+                    | Login with Google 
