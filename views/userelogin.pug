@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title="User Loged"
+        style
+            include ./style/style.css
+    body        
+        div.container
+            if(name === '' || lastName === '')    
+                h1 Something went wrong
+                if(name === '')    
+                    p.warning Wrong name
+                if(lastName === '')
+                    p.warning Wrong last name
+            else
+                h1 Welcome
+                p Your name is : #{name}
+                p Your last name is: #{lastName}
